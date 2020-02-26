@@ -122,6 +122,37 @@
         </pluginRepository>
     </pluginRepositories>
     <!---->
+    <profiles>
+        <profile>
+            <id>dev</id>
+            <properties>
+                <env>dev</env>
+            </properties>
+
+
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+        </profile>
+
+        <profile>
+            <id>stage</id>
+            <properties>
+                <env>stage</env>
+            </properties>
+        </profile>
+
+        <profile>
+            <!-- 生产环境 -->
+            <id>product</id>
+            <properties>
+                <env>product</env>
+            </properties>
+            <!-- 是否默认 true表示默认-->
+
+        </profile>
+    </profiles>
+
 
     <build>
         <plugins>
