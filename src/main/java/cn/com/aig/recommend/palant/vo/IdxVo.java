@@ -1,5 +1,6 @@
 package cn.com.aig.recommend.palant.vo;
 
+import com.alibaba.fastjson.JSON;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -49,5 +50,12 @@ public class IdxVo {
         public void setProperties(Map<String, Map<String, Object>> properties) {
             this.properties = properties;
         }
+    }
+
+    public static void main(String[] args) {
+        IdxVo  idxVo = new IdxVo();
+
+
+        System.out.println(JSON.toJSONString(idxVo));
     }
 }

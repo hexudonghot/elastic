@@ -32,6 +32,7 @@ public class ElasticIndexController {
      * @param idxVo
      * @return  ResponseResult
      * @throws
+     *   {"idxName":"idx_locat","idxSql":{"dynamic":false,"properties":{"id":{"type":"long"},"flag":{"type":"text","index":true},"localCode":{"type":"text","index":true},"localName":{"type":"text","index":true},"lv":{"type":"long"},"supLocalCode":{"type":"text","index":true},"url":{"type":"text","index":true}}}}
      */
     @PostMapping(value = "/createIndex")
     public ResponseResult createIndex(@RequestBody IdxVo idxVo){
